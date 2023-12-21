@@ -85,8 +85,8 @@ anova(model1, model2, test="Chi")$P  #extract P value for PRS
 
 ### 1.4 Please report all the following results:
 
-PRS 	Target cohort name	N SNPs in PRS	Target cohort Ncases	Target cohort Ncontrols	Beta of PRS on case status	P value of PRS
-PRS-CS						
+``PRS`` 	``Target`` ``cohort name``	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``
+#for PRS-CS						
 
 
 ### 2. Polygenic risk scoring via PolyPred method
@@ -327,10 +327,10 @@ Upper limit = 1.96*(var2*100) + R2 liab
 #use the r2_diff function from r2 redux to convert SE and 95%CI to the liab scale too.
 
 #results table should like:
-PRS 	Target cohort name	R2 liability for PRS (not as %)	95%CI of R2 liab	P value of R2 diff 	N SNPs in PRS	Target cohort Ncases	Target cohort Ncontrols	Beta of PRS on case status	P value of PRS	Mix weights Fine-mapping (PolyPred only)	Mix weights PRS-CS (PolyPred only)
-PRS-CS			                                                                	NA						                                                                                                                  NA	                                          NA
-PolyPred (SuSiE)											
-PolyPred (Polyfun-SuSiE)											
+``PRS`` 	``Target cohort name``	``R2 liability for PRS (not as %)``	``95%CI of R2 liab``	``P value of R2 diff`` 	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``	``Mix weights Fine-mapping (PolyPred only)``	``Mix weights PRS-CS (PolyPred only)``
+#for PRS-CS			                                                                							                                                                                                                
+#for PolyPred (SuSiE)											
+#for PolyPred (Polyfun-SuSiE)											
 
 
 
