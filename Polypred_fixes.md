@@ -5,15 +5,25 @@ Niamh Mullins niamh.mullins@mssm.edu
 
 Materials:
 PGC3 BD GWAS and fine-mapping results (formatted for PRS testing) all in build hg19: 
+
 Formatted PRS-CS results of PGC3 BD GWAS: pgc3_bip_forprscs.txt
+
 Genome-wide fine-mapping results of PGC3 BD GWAS via SuSiE: pgc3_bip_susie_hrc.txt.gz
+
 Genome-wide fine-mapping results of PGC3 BD GWAS via Polyfun SuSiE: pgc3_bip_polyfun_susie_hrc.txt.gz
+
 Link to download these files (checksums included): https://www.dropbox.com/sh/8lkzx1mmapik0ms/AABoRcqclvrgeJ9p8gzSF9Oca?dl=0 
+
 Genotypes of target dataset: We used best guess genotypes (imputed allele dosages converted to hard calls) for this analysis, with QC as appropriate for GWAS. (For data processed with Ricopili use .bgn files). 
+
 Covariates for target dataset: As per a GWAS, please include the relevant principal components for the target dataset (and factors capturing site of recruitment/ genotyping batch if necessary). Please do not include age and sex.
+
 PRS-CS software: installation instructions: https://github.com/getian107/PRScs
+
 LD reference panel: LD reference panel of the appropriate ancestry provided with PRS-CS: https://github.com/getian107/PRScs 
+
 PolyPred software: installation instructions: https://github.com/omerwe/polyfun
+
 r2redux software: https://github.com/mommy003/r2redux 
 
 ### Methods:
@@ -194,6 +204,7 @@ write.table(z, " targetdatasetname_prscsweights.allcols.allelesaligned.txt", row
 
 ### 2.2 Mix weights from PRS-CS and fine-mapping using PolyPred
 In this step, we will mix the weights (effect sizes) from fine-mapping (either SuSiE or Polyfun-SuSiE) and PRS-CS using PolyPred to train the optimal PRS weights. 
+
 The .pheno file below should be a plink style pheno file including only the unrelated cases and controls for the PRS analysis (related individuals may remain in the plink binary file. 
 
 Important note: the PolyPred.py script will not run if there are duplicate variants in the target cohort, so these will need to be removed from the plink files (.bed, .bim).
