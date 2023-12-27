@@ -86,6 +86,7 @@ anova(model1, model2, test="Chi")$P  #extract P value for PRS
 ### 1.4 Please report all the following results:
 
 ``PRS`` 	``Target`` ``cohort name``	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``
+
 #for PRS-CS						
 
 
@@ -229,7 +230,9 @@ python PolyPred.py \
 
 ```PRS``` 	```Target cohort name```	```N SNPs in PRS```	```Target cohort Ncases```	```Target cohort Ncontrols```	```Beta of PRS on case status```	```P value of PRS```	```Mix weights Fine-mapping (PolyPred only)```	```Mix weights PRS-CS (PolyPred only)```
 #for PRS-CS						
+
 #for PolyPred (SuSiE)								
+
 #for PolyPred (Polyfun-SuSiE)								
 
 
@@ -328,8 +331,11 @@ Upper limit = 1.96*(var2*100) + R2 liab
 
 #results table should like:
 ``PRS`` 	``Target cohort name``	``R2 liability for PRS (not as %)``	``95%CI of R2 liab``	``P value of R2 diff`` 	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``	``Mix weights Fine-mapping (PolyPred only)``	``Mix weights PRS-CS (PolyPred only)``
+
 #for PRS-CS			                                                                							                                                                                                                
+
 #for PolyPred (SuSiE)											
+
 #for PolyPred (Polyfun-SuSiE)											
 
 
