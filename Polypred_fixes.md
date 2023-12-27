@@ -3,14 +3,14 @@ Authors:
 Maria Koromina maria.koromina@mssm.edu
 Niamh Mullins niamh.mullins@mssm.edu
 
-Materials:
+### Materials:
 PGC3 BD GWAS and fine-mapping results (formatted for PRS testing) all in build hg19: 
 
-Formatted PRS-CS results of PGC3 BD GWAS: pgc3_bip_forprscs.txt
+- Formatted PRS-CS results of PGC3 BD GWAS: pgc3_bip_forprscs.txt
 
-Genome-wide fine-mapping results of PGC3 BD GWAS via SuSiE: pgc3_bip_susie_hrc.txt.gz
+- Genome-wide fine-mapping results of PGC3 BD GWAS via SuSiE: pgc3_bip_susie_hrc.txt.gz
 
-Genome-wide fine-mapping results of PGC3 BD GWAS via Polyfun SuSiE: pgc3_bip_polyfun_susie_hrc.txt.gz
+- Genome-wide fine-mapping results of PGC3 BD GWAS via Polyfun SuSiE: pgc3_bip_polyfun_susie_hrc.txt.gz
 
 Link to download these files (checksums included): https://www.dropbox.com/sh/8lkzx1mmapik0ms/AABoRcqclvrgeJ9p8gzSF9Oca?dl=0 
 
@@ -227,13 +227,13 @@ python PolyPred.py \
 ### 2.5 Report results as in Table in 1.4, and additionally the weight that was attributed to each input file by PolyPred, which can be found in the targetdatasetname_polyfun_susie_prscs.prsfile.
 
 
-PRS 	Target cohort name	N SNPs in PRS	Target cohort Ncases	Target cohort Ncontrols	Beta of PRS on case status	P value of PRS	Mix weights Fine-mapping (PolyPred only)	Mix weights PRS-CS (PolyPred only)
-PRS-CS							NA	NA
-PolyPred (SuSiE)								
-PolyPred (Polyfun-SuSiE)								
+```PRS``` 	```Target cohort name```	```N SNPs in PRS```	```Target cohort Ncases```	```Target cohort Ncontrols```	```Beta of PRS on case status```	```P value of PRS```	```Mix weights Fine-mapping (PolyPred only)```	```Mix weights PRS-CS (PolyPred only)```
+#PRS-CS						
+#PolyPred (SuSiE)								
+#PolyPred (Polyfun-SuSiE)								
 
 
-### 3. Use r2redux software to calculate R2, 95%CI for each R2 and pvalues for the R2diff between PRSCS and PolyPred based method
+### 3. Use r2redux software to calculate R2, 95%CI for each R2 and pvalues for the R2diff between PRS-CS and PolyPred based method
 
 ### 3.1 Slightly format your PRS results files using `awk` or `grep` (PolyPred, PRS-CS) in order to include the IIDs and the Score columns.
 
