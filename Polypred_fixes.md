@@ -12,19 +12,19 @@ PGC3 BD GWAS and fine-mapping results (formatted for PRS testing) all in build h
 
 - Genome-wide fine-mapping results of PGC3 BD GWAS via Polyfun SuSiE: pgc3_bip_polyfun_susie_hrc.txt.gz
 
-Link to download these files (checksums included): https://www.dropbox.com/sh/8lkzx1mmapik0ms/AABoRcqclvrgeJ9p8gzSF9Oca?dl=0 
+Link to download these files (checksums included) can be found [here](https://www.dropbox.com/sh/8lkzx1mmapik0ms/AABoRcqclvrgeJ9p8gzSF9Oca?dl=0). 
 
 Genotypes of target dataset: We used best guess genotypes (imputed allele dosages converted to hard calls) for this analysis, with QC as appropriate for GWAS. (For data processed with Ricopili use .bgn files). 
 
 Covariates for target dataset: As per a GWAS, please include the relevant principal components for the target dataset (and factors capturing site of recruitment/ genotyping batch if necessary). Please do not include age and sex.
 
-PRS-CS software: installation instructions: https://github.com/getian107/PRScs
+PRS-CS software: [installation instructions](https://github.com/getian107/PRScs).
 
-LD reference panel: LD reference panel of the appropriate ancestry provided with PRS-CS: https://github.com/getian107/PRScs 
+LD reference panel: LD reference panel of the appropriate ancestry provided with PRS-CS can be found [here](https://github.com/getian107/PRScs). 
 
-PolyPred software: installation instructions: https://github.com/omerwe/polyfun
+PolyPred software: [installation instructions](https://github.com/omerwe/polyfun).
 
-r2redux software: https://github.com/mommy003/r2redux 
+r2redux software: [usage instructions](https://github.com/mommy003/r2redux). 
 
 ### Methods:
 ### 1.Polygenic risk scoring via PRS-CS method
@@ -228,9 +228,9 @@ python PolyPred.py \
 
 
 ```PRS``` 	```Target cohort name```	```N SNPs in PRS```	```Target cohort Ncases```	```Target cohort Ncontrols```	```Beta of PRS on case status```	```P value of PRS```	```Mix weights Fine-mapping (PolyPred only)```	```Mix weights PRS-CS (PolyPred only)```
-#PRS-CS						
-#PolyPred (SuSiE)								
-#PolyPred (Polyfun-SuSiE)								
+#for PRS-CS						
+#for PolyPred (SuSiE)								
+#for PolyPred (Polyfun-SuSiE)								
 
 
 ### 3. Use r2redux software to calculate R2, 95%CI for each R2 and pvalues for the R2diff between PRS-CS and PolyPred based method
