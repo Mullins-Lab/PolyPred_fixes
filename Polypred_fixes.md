@@ -27,7 +27,7 @@ PolyPred software: [installation instructions](https://github.com/omerwe/polyfun
 r2redux software: [usage instructions](https://github.com/mommy003/r2redux). 
 
 ### Methods:
-### 1.Polygenic risk scoring via PRS-CS method
+### 1. Polygenic risk scoring via PRS-CS method
 ### 1.1 Calculate weights from PGC BD GWAS summary statistics using PRS-CS
 
 Example script:
