@@ -87,7 +87,7 @@ anova(model1, model2, test="Chi")$P  #extract P value for PRS
 
 ``PRS`` 	``Target`` ``cohort name``	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``
 
-#for PRS-CS						
+#add the above values for PRS-CS						
 
 
 ### 2. Polygenic risk scoring via PolyPred method
@@ -229,12 +229,8 @@ python PolyPred.py \
 
 
 ```PRS``` 	```Target cohort name```	```N SNPs in PRS```	```Target cohort Ncases```	```Target cohort Ncontrols```	```Beta of PRS on case status```	```P value of PRS```	```Mix weights Fine-mapping (PolyPred only)```	```Mix weights PRS-CS (PolyPred only)```
-#for PRS-CS						
 
-#for PolyPred (SuSiE)								
-
-#for PolyPred (Polyfun-SuSiE)								
-
+#add these values for PRS-CS, PolyPred (SuSiE)	and PolyPred (Polyfun-SuSiE)								
 
 ### 3. Use r2redux software to calculate R2, 95%CI for each R2 and pvalues for the R2diff between PRS-CS and PolyPred based method
 
@@ -329,14 +325,10 @@ Upper limit = 1.96*(var2*100) + R2 liab
 
 #use the r2_diff function from r2 redux to convert SE and 95%CI to the liab scale too.
 
-#results table should like:
+#The final results table should like:
 ``PRS`` 	``Target cohort name``	``R2 liability for PRS (not as %)``	``95%CI of R2 liab``	``P value of R2 diff`` 	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``	``Mix weights Fine-mapping (PolyPred only)``	``Mix weights PRS-CS (PolyPred only)``
 
-#for PRS-CS			                                                                							                                                                                                                
-
-#for PolyPred (SuSiE)											
-
-#for PolyPred (Polyfun-SuSiE)											
+#add these values for PRS-CS, PolyPred (SuSiE)	and PolyPred (Polyfun-SuSiE)											
 
 
 
