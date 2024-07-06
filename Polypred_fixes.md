@@ -1,6 +1,6 @@
 ## Protocol for testing fine-mapping-informed polygenic risk scores via PRS-CS and PolyPred
 Authors:
-Maria Koromina maria.koromina@mssm.edu
+Maria Koromina maria.koromina@mssm.edu,
 Niamh Mullins niamh.mullins@mssm.edu
 
 ### Materials:
