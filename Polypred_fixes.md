@@ -236,7 +236,7 @@ python PolyPred.py \
 
 ### 3.1 Slightly format your PRS results files using `awk` or `grep` (PolyPred, PRS-CS) in order to include the IIDs and the Score columns.
 
-### 3.2 Use the following code in order to calculate R20, and S.E and pvalues for the R2diff between PRSCS and PolyPred based method
+### 3.2 Use the following code in order to calculate R20, and S.E and pvalues for the R2diff between PRS-CS and PolyPred based method
 
 ```
 library(tidyverse)
