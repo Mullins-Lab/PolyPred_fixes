@@ -305,30 +305,30 @@ write.table(output2,'targetcohort_r2redux_prscs_polyfun_susie.txt'). ##the outpu
 ```
 
 ### 3.2 Convert the R20 into R2 liability scale
+#Run this twice for each PolyPred based method.
 
 ```
 R2O= output$rsq2 #R2 from output 3.1 
+seO= output$var2
 K = 0.02 #prevalence of BD in the population – we assume 2% 
 P=Ncases/(Ncases+Ncontrols) #prevalence of disorder in the target dataset 
-thd = -qnorm(K,0,1) #the threshold on the normal distribution which truncates the proportion of disease prevalence 
-zv = dnorm(thd) #z (normal density) 
-mv = zv/K #mean liability for case 
-theta = mv*(P-K)/(1-K)*(mv*(P-K)/(1-K)-thd) #theta in equation  
-cv = K*(1-K)/zv^2*K*(1-K)/(P*(1-P)) #C in equation  
-R2 = R2O*cv/(1+R2O*theta*cv)*100 
-R2 #R2 on the liability scale
-
-##use the var2 (SE) from the 3.1 outputs to compute 95%CI for the R2 liab scale values
-Lower limit = -1.96*(var2*100)+ R2 liab
-Upper limit = 1.96*(var2*100) + R2 liab
 ```
 
-#use the r2_diff function from r2 redux to convert SE and 95%CI to the liab scale too.
+#use the cc_trf function from r2redux to get R2l and sel (liability scale)
+```
+library(r2redux)
+mydata <- cc_trf(R2O, seO, K, P) #extract the R2l and sel values from the output 
+```
+
+#use the R2l and sel values from the cc_trf function to compute 95%CIs 
+```
+Lower_limit = -1.96*(sel)+ R2l 
+Upper_limit = 1.96*(sel) + R2l
+```
 
 #The final results table should like:
-``PRS`` 	``Target cohort name``	``R2 liability for PRS (not as %)``	``95%CI of R2 liab``	``P value of R2 diff`` 	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``	``Mix weights Fine-mapping (PolyPred only)``	``Mix weights PRS-CS (PolyPred only)``
-
-#add these values for PRS-CS, PolyPred (SuSiE)	and PolyPred (Polyfun-SuSiE)											
-
+``PRS`` 	``Target cohort name``	``R2 liability for PRS (not as %)``	``95%CI of R2 liab (not as %)``	``P value of R2 diff`` 	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``	``Mix weights Fine-mapping (PolyPred only)``	``Mix weights PRS-CS (PolyPred only)``
+									
+#You can then convert the R2 liability for PRS and the 95CIs as %.
 
 
