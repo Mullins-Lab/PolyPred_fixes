@@ -206,7 +206,7 @@ write.table(z, " targetdatasetname_prscsweights.allcols.allelesaligned.txt", row
 ### 2.2 Mix weights from PRS-CS and fine-mapping using PolyPred
 In this step, we will mix the weights (effect sizes) from fine-mapping (either SuSiE or Polyfun-SuSiE) and PRS-CS using PolyPred to train the optimal PRS weights. 
 
-The .pheno file below should be a plink style pheno file including only the unrelated cases and controls for the PRS analysis (related individuals may remain in the plink binary file. 
+The .pheno file below should be a plink style pheno file including only the unrelated cases and controls for the PRS analysis (related individuals may remain in the plink binary file). 
 
 Important note: the PolyPred.py script will not run if there are duplicate variants in the target cohort, so these will need to be removed from the plink files (.bed, .bim).
 
