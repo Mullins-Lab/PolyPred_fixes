@@ -87,11 +87,11 @@ anova(model1, model2, test="Chi")$P  #extract P value for PRS
 
 ``PRS`` 	``Target`` ``cohort name``	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``
 
-#add the above values for PRS-CS						
+Add the above values for the PRS-CS method.						
 
 
 ### 2. Polygenic risk scoring via PolyPred method
-Note section 2 needs to be done twice – once using SuSie fine-mapping and once using Polyfun-SuSie.
+Note section 2 needs to be done twice – once using SuSiE fine-mapping and once using Polyfun+SuSiE.
 
 ### 2.1 File preparation
 Note: In this step, we match the orientation of A1 and A2 alleles in the GW fine-mapping and PRS-CS weights file (separately!) with the ones in the target cohort .bim file for PolyPred to run correctly. 
