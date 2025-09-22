@@ -230,7 +230,7 @@ python PolyPred.py \
 
 ```PRS``` 	```Target cohort name```	```N SNPs in PRS```	```Target cohort Ncases```	```Target cohort Ncontrols```	```Beta of PRS on case status```	```P value of PRS```	```Mix weights Fine-mapping (PolyPred only)```	```Mix weights PRS-CS (PolyPred only)```
 
-#add these values for PRS-CS, PolyPred (SuSiE)	and PolyPred (Polyfun-SuSiE)								
+Add these values for PRS-CS, PolyPred (SuSiE)	and PolyPred (Polyfun-SuSiE)								
 
 ### 3. Use r2redux software to calculate R2, 95%CI for each R2 and pvalues for the R2diff between PRS-CS and PolyPred based method
 
@@ -329,6 +329,6 @@ Upper_limit = 1.96*(sel) + R2l
 #The final results table should like:
 ``PRS`` 	``Target cohort name``	``R2 liability for PRS (not as %)``	``95%CI of R2 liab (not as %)``	``P value of R2 diff`` 	``N SNPs in PRS``	``Target cohort Ncases``	``Target cohort Ncontrols``	``Beta of PRS on case status``	``P value of PRS``	``Mix weights Fine-mapping (PolyPred only)``	``Mix weights PRS-CS (PolyPred only)``
 									
-#You can then convert the R2 liability for PRS and the 95CIs as %.
+You can then convert the R2 liability for PRS and the 95CIs as %.
 
 
